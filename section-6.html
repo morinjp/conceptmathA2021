@@ -1,0 +1,135 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-23T09:03:43-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="fr-FR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CM Droites</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Évaluer (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Sauter au contenu</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{amsmath}\require{cancel}\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4} 
+\newcommand{\myequation}[2]{#1\amp =#2} 
+\newcommand{\indefiniteintegral}[2]{\int#1\,d#2}
+\newcommand{\testingescapedpercent}{ \% } 
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="https://fr.wikipedia.org/wiki/Alg%C3%A8bre_lin%C3%A9aire" target="_blank"><img src="images/matrice.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="CM.html"><span class="title">Concepts mathématiques <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">201-565-SH</code></span></a></h1>
+<p class="byline">Jean-Philippe Morin</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Table des matières</button><div class="tree-nav toolbar toolbar-divisor-3">
+<button id="calculator-toggle" class="toolbar-item button toggle" title="Show calculator" aria-expanded="false" aria-controls="calculator-container">Calc</button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "3d",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-5.html" title="Précédent">Précédent</a><a id="upbutton" class="up-button button toolbar-item" href="partie2.html" title="Haut">Haut</a><a id="nextbutton" class="next-button button toolbar-item" href="section-7.html" title="Suivant">Suivant</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Table des matières</button><a class="previous-button toolbar-item button" href="section-5.html" title="Précédent">Précédent</a><a class="up-button button toolbar-item" href="partie2.html" title="Haut">Haut</a><a class="next-button button toolbar-item" href="section-7.html" title="Suivant">Suivant</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="accueil.html" data-scroll="accueil"><span class="title">Accueil</span></a></li>
+<li class="link">
+<a href="partie1.html" data-scroll="partie1"><span class="codenumber">1</span> <span class="title">Traitement des nombres</span></a><ul>
+<li><a href="section-1.html" data-scroll="section-1">Congruence modulaire</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Systèmes de numération</a></li>
+<li><a href="section-3.html" data-scroll="section-3">Évaluer la longueur de représentation binaire d'un entier</a></li>
+<li><a href="section-4.html" data-scroll="section-4">Norme IEEE 754</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="partie2.html" data-scroll="partie2"><span class="codenumber">2</span> <span class="title">Géométrie vectorielle</span></a><ul>
+<li><a href="section-5.html" data-scroll="section-5">Vecteurs</a></li>
+<li><a href="section-6.html" data-scroll="section-6" class="active">Droites</a></li>
+<li><a href="section-7.html" data-scroll="section-7">Angles et trigonométrie</a></li>
+<li><a href="section-8.html" data-scroll="section-8">Matrices et transformations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="partie3.html" data-scroll="partie3"><span class="codenumber">3</span> <span class="title">Logique et circuits</span></a><ul>
+<li><a href="section-9.html" data-scroll="section-9">Logique</a></li>
+<li><a href="section-10.html" data-scroll="section-10">Circuits logiques</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="partie4.html" data-scroll="partie4"><span class="codenumber">4</span> <span class="title">Statistiques</span></a><ul><li><a href="section-11.html" data-scroll="section-11">Statistiques</a></li></ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Appendices</span></a></li>
+<li class="link"><a href="Notations.html" data-scroll="Notations"><span class="codenumber">A</span> <span class="title">Notations</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Rédigé avec PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-6"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Droites</span>
+</h2>
+<p id="p-9"><a class="external" href="https://kb1-edesgreniers.profweb.ca/ch_droites.html" target="_blank"><code class="code-inline tex2jax_ignore">https://kb1-edesgreniers.profweb.ca/ch_droites.html</code></a></p></section></div></main>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-59NNFZK0JK"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-59NNFZK0JK');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>
