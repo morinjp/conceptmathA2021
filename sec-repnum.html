@@ -1,7 +1,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-09-05T13:51:39-04:00       *-->
+<!--*       on 2021-09-06T16:04:35-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -135,7 +135,7 @@ true);
 <span class="type">Sous-section</span> <span class="codenumber">1.2.5</span> <span class="title">Conversion du décimal en hexadécimal</span>
 </h3>
 <p id="p-12"><a class="external" href="https://kb1-edesgreniers.profweb.ca/sec_rep_num_conversion_10_16.html" target="_blank"><code class="code-inline tex2jax_ignore">https://kb1-edesgreniers.profweb.ca/sec_rep_num_conversion_10_16.html</code></a></p></section><section class="subsection" id="subsec-convboh"><h3 class="heading hide-type">
-<span class="type">Sous-section</span> <span class="codenumber">1.2.6</span> <span class="title">Conversions  octal ←→ binaire ←→ hexadécimal</span>
+<span class="type">Sous-section</span> <span class="codenumber">1.2.6</span> <span class="title">Conversions  octal ↔ binaire ↔ hexadécimal</span>
 </h3>
 <p id="p-13"><a class="external" href="https://kb1-edesgreniers.profweb.ca/sec_rep_num_conversions_2_8_16.html" target="_blank"><code class="code-inline tex2jax_ignore">https://kb1-edesgreniers.profweb.ca/sec_rep_num_conversions_2_8_16.html</code></a></p></section><section class="subsection" id="subsec-binadd"><h3 class="heading hide-type">
 <span class="type">Sous-section</span> <span class="codenumber">1.2.7</span> <span class="title">Additions et soustractions en binaire</span>
@@ -160,14 +160,14 @@ true);
 e=\log_2(9~999~999)=\frac{\log(9~999~999)}{\log(2)}
 \end{equation*}
 </div>
-<p class="continuation">et ainsi, pour trouver le nombre de bits requis, il reste à arrondir à l'entier supérieur (via la fonction plafond).</p>
-<p id="p-19">Par conséquent, en général, pour représenter un nombre \(x\) en binaire, il faut prévoir le nombre de bits suivant:</p>
+<p class="continuation">et ainsi, pour trouver le nombre de bits requis, il reste à arrondir à l'entier... mais en fait, pas tout à fait: si le nombre se trouve à être précisément une puissance de \(2\text{,}\) par exemple \(8=2^3\text{,}\) le calcul ci-haut donnera \(\log_2(8)=3\text{,}\) or \((8)_{10}=(1000)_2\text{:}\) il faut \(4\) bits, et non \(3\text{.}\) Pour ne pas avoir à corriger chaque fois qu'on fait face à une puissance de 2, il suffit d'arrondir à inférieur ou égal, et ajouter \(1\) au résultat.</p>
+<p id="p-19">Par conséquent, en général, pour représenter un nombre positif \(x\) en binaire, il faut prévoir le nombre de bits  \(\ell(x)\) suivant:</p>
 <div class="displaymath">
 \begin{equation*}
-\left\lceil \frac{\log(x)}{\log(2)}\right\rceil
+\ell(x)=1+\left\lfloor \frac{\log(x)}{\log(2)}\right\rfloor
 \end{equation*}
 </div>
-<p class="continuation">en plus des autres bits éventuellement requis pour consigner d'autres informations sur le nombre.</p></section></section></div></main>
+<p class="continuation">(en plus des autres bits éventuellement requis pour consigner d'autres informations sur le nombre).</p></section></section></div></main>
 </div>
 <!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-59NNFZK0JK"></script><script>  window.dataLayer = window.dataLayer || [];

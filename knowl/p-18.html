@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-09-05T13:51:39-04:00       *-->
+<!--*       on 2021-09-06T16:04:35-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -27,7 +27,7 @@
 e=\log_2(9~999~999)=\frac{\log(9~999~999)}{\log(2)}
 \end{equation*}
 </div>
-<p class="continuation">et ainsi, pour trouver le nombre de bits requis, il reste à arrondir à l'entier supérieur (via la fonction plafond).</p>
+<p class="continuation">et ainsi, pour trouver le nombre de bits requis, il reste à arrondir à l'entier... mais en fait, pas tout à fait: si le nombre se trouve à être précisément une puissance de \(2\text{,}\) par exemple \(8=2^3\text{,}\) le calcul ci-haut donnera \(\log_2(8)=3\text{,}\) or \((8)_{10}=(1000)_2\text{:}\) il faut \(4\) bits, et non \(3\text{.}\) Pour ne pas avoir à corriger chaque fois qu'on fait face à une puissance de 2, il suffit d'arrondir à inférieur ou égal, et ajouter \(1\) au résultat.</p>
 <span class="incontext"><a href="sec-repnum.html#p-18">Contexte</a></span>
 </body>
 </html>
