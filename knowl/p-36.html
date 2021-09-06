@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-09-06T16:04:35-04:00       *-->
+<!--*       on 2021-09-06T19:48:30-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,20 +15,21 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraphe</span></h6>
-<p>Encore ici le premier bit pourra distinguer les négatifs A priori, la conversion en complément à 2 requiert une soustraction... mais on peut faire plus vite en remarquant</p>
+<p>On encode les nombres négatifs par l’intermédiaire de la forme en <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">complément à 2</em> (sur n bits) : un entier négatif \(-X\) sera donc converti en</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+X'=2^n-X.
+\end{equation*}
+</div>
+<p class="continuation">Par exemple : \(-(23~ 716)_{10}=-(0101 1100 1010 0100)_2\) sera encodé comme</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-X'\amp=2^n-X \\
-\amp = \underbrace{2^n-1}_{(11\cdots111)_2}-\underbrace{  X  }_{(b_{n-1}\cdots b_3 b_2 b_1 b_0 )_2 }+1\\
-\amp = (\underbrace{\overline{b_{n-1}}\cdots \overline{b_3} \, \overline{b_2}\,  \overline{b_1}\, \overline{b_0}}_{\text{bits inversés}})_2 +1 
+2^{16}-23~\amp716   \\
+=\amp\phantom{-}\underbrace{~(1~0000~0000~0000~0000)_2~}_{2^{16}}\qquad \text{(ce nombre n'existe pas dans notre système!)}    \\
+\amp         - \underbrace{~~(0101~1100~1010~0100)_2~}_{(23~716)_{10}}\\
+=\amp\phantom{-}\underbrace{~~~(1010~0011~0101~1100)_2~}_{(41~820)_{10}}
 \end{align*}
 </div>
-<p class="continuation">Donc, il suffit</p>
-<ol class="decimal">
-<li><p>d’inverser tous les bits,</p></li>
-<li><p>puis additionner 1.</p></li>
-</ol>
-<p class="continuation">Il n’y a plus de soustraction à faire!</p>
 <span class="incontext"><a href="sec-repint.html#p-36">Contexte</a></span>
 </body>
 </html>

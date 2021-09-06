@@ -1,7 +1,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-09-06T16:04:35-04:00       *-->
+<!--*       on 2021-09-06T19:48:29-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -44,8 +44,8 @@
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
@@ -148,26 +148,29 @@ true);
 </h3>
 <p id="p-16">Il sera utile de pouvoir prévoir combien de bits seront nécessaires pour représenter en binaire des entiers parmi une liste.</p>
 <p id="p-17">Si nous prévoyons devoir représenter en binaire des entiers, disons, entre 0 et 9 999 999, combien de bits seront nécessaires? Il suffit de déterminer la longueur de représentation binaire du plus grand entier de la liste, soit 9 999 999.</p>
-<p id="p-18">On peut le convertir et compter combien de bits sont requis. On peut aussi accélérer en vérifiant seulement combien de divisions par 2 sont nécessaires avant de réduire le nombre 9 999 999 à quelque chose qui soit inférieur ou égal à 1 (il restera alors une partie fractionnaire qui reflète tous les restes qui n'ont pas été retirés du calcul, rendant le calcul plus rapide qu'une conversion complète). En réalité, répéter \(e\) divisions par 2 équivaut à diviser par \(2^e\text{:}\) on cherche donc à obtenir \(\frac{9~999~999}{2^e}\le 1\) (et on souhaite que l'exposant  \(e\) soit le plus petit possible, donc que \(e-1\) ne permette pas d'atteindre la condition, \(\frac{9~999~999}{2^e}\gt 1\)):</p>
+<p id="p-18">On peut le convertir et compter combien de bits sont requis. On peut aussi accélérer en vérifiant seulement combien de divisions par 2 sont nécessaires avant de réduire le nombre \(9~999~ 999\) à quelque chose qui soit inférieur à 1 (il restera alors une partie fractionnaire qui reflète tous les restes qui n'ont pas été retirés du calcul, rendant le calcul plus rapide qu'une conversion complète). En réalité, répéter \(e\) divisions par \(2\) équivaut à diviser par \(2^e\text{:}\) on cherche donc à obtenir \(\frac{9~999~999}{2^e}\lt 1\) (et on souhaite que l'exposant  \(e\) soit le plus petit possible, donc que \(e-1\) soit tel que  \(1\leq\frac{9~999~999}{2^{e-1}}\)):</p>
+<div class="displaymath">
+\begin{align*}
+\frac12\leq~ \amp \frac{9~999~999}{2^{e}}\lt 1 \\
+2^{e-1}\leq~ \amp 9~999~999\lt 2^e. 
+\end{align*}
+</div>
+<p class="continuation">La recherche d'un exposant tel que \(2^e \approx 9~999~999\) peut se faire par un calcul direct grâce aux logarithmes: en effet, <em class="emphasis">l'exposant à donner à la base 2 pour atteindre 9 999 999</em> s'appelle aussi <em class="emphasis">le logarithme en base 2 de 9 999 999</em>:</p>
 <div class="displaymath">
 \begin{equation*}
-2^{e-1}\lt 9~999~999\le 2^e.
+e-1\leq \underbrace{\log_2(9~999~999)}_{\frac{\log(9~999~999)}{\log(2)}}\lt e
 \end{equation*}
 </div>
-<p class="continuation">La recherche d'un exposant tel que \(2^e \approx 9~999~999\) peut se faire par un calcul direct grâce aux logarithmes: en effet, l'exposant à donner à la base 2 pour atteindre 9 999 999 s'appelle aussi le logarithme en base 2 de 9 999 999:</p>
-<div class="displaymath">
+<p class="continuation">et ainsi, pour trouver le nombre de bits requis, il reste à arrondir à l'entier... mais en fait, pas tout à fait: si le nombre se trouve à être précisément une puissance de \(2\text{,}\) par exemple \(8=2^3\text{,}\) le calcul ci-haut donnera \(\log_2(8)=3\text{,}\) or \((8)_{10}=(1000)_2\) et ainsi il faut \(4\) bits, et non \(3\text{.}\)</p>
+<p id="p-19">Pour ne pas avoir à corriger chaque fois qu'on fait face à une puissance de 2, il suffit <em class="alert">d'arrondir à l'entier inférieur ou égal</em>, et ajouter \(1\) au résultat.</p>
+<p id="p-20">Par conséquent, en général, pour représenter un nombre positif \(x\) en binaire, il faut prévoir le nombre de bits  \(\ell(x)\) suivant:</p>
+<article class="assemblage assemblage-like" id="assemblage-"><h6 class="heading"><span class="title">Longueur de représentation binaire.</span></h6>
+<div class="displaymath" id="p-21">
 \begin{equation*}
-e=\log_2(9~999~999)=\frac{\log(9~999~999)}{\log(2)}
+\ell(x)=\left\lfloor \frac{\log(|x|)}{\log(2)}\right\rfloor+1
 \end{equation*}
 </div>
-<p class="continuation">et ainsi, pour trouver le nombre de bits requis, il reste à arrondir à l'entier... mais en fait, pas tout à fait: si le nombre se trouve à être précisément une puissance de \(2\text{,}\) par exemple \(8=2^3\text{,}\) le calcul ci-haut donnera \(\log_2(8)=3\text{,}\) or \((8)_{10}=(1000)_2\text{:}\) il faut \(4\) bits, et non \(3\text{.}\) Pour ne pas avoir à corriger chaque fois qu'on fait face à une puissance de 2, il suffit d'arrondir à inférieur ou égal, et ajouter \(1\) au résultat.</p>
-<p id="p-19">Par conséquent, en général, pour représenter un nombre positif \(x\) en binaire, il faut prévoir le nombre de bits  \(\ell(x)\) suivant:</p>
-<div class="displaymath">
-\begin{equation*}
-\ell(x)=1+\left\lfloor \frac{\log(x)}{\log(2)}\right\rfloor
-\end{equation*}
-</div>
-<p class="continuation">(en plus des autres bits éventuellement requis pour consigner d'autres informations sur le nombre).</p></section></section></div></main>
+<p class="continuation">(en plus des autres bits éventuellement requis pour consigner d'autres informations sur le nombre).</p></article></section></section></div></main>
 </div>
 <!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-59NNFZK0JK"></script><script>  window.dataLayer = window.dataLayer || [];
