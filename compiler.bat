@@ -1,0 +1,1 @@
+xsltproc -stringparam publisher  publication.ptx --xinclude ..\..\mathbook\xsl\pretext-html.xsl ptx\principal.ptx
