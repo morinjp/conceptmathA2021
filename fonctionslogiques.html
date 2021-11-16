@@ -1,0 +1,2230 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="fonctions%20logiques_fichiers/filelist.xml">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Morin, Jean-Philippe</o:Author>
+  <o:LastAuthor>Morin, Jean-Philippe</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>56</o:TotalTime>
+  <o:LastPrinted>2021-11-16T16:20:00Z</o:LastPrinted>
+  <o:Created>2021-11-16T16:21:00Z</o:Created>
+  <o:LastSaved>2021-11-16T16:21:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>587</o:Words>
+  <o:Characters>3232</o:Characters>
+  <o:Lines>26</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>3812</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="fonctions%20logiques_fichiers/themedata.thmx">
+<link rel=colorSchemeMapping
+href="fonctions%20logiques_fichiers/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>FR-CA</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-alt:"\FF2D\FF33 \30B4\30B7\30C3\30AF";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536870145 1791491579 134217746 0 131231 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536870145 1791491579 134217746 0 131231 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"En-tête Car";
+	margin:0cm;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Pied de page Car";
+	margin:0cm;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoPlaceholderText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	color:gray;}
+span.En-tteCar
+	{mso-style-name:"En-tête Car";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:En-tête;}
+span.PieddepageCar
+	{mso-style-name:"Pied de page Car";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Pied de page";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("fonctions%20logiques_fichiers/header.htm") fs;
+	mso-footnote-continuation-separator:url("fonctions%20logiques_fichiers/header.htm") fcs;
+	mso-endnote-separator:url("fonctions%20logiques_fichiers/header.htm") es;
+	mso-endnote-continuation-separator:url("fonctions%20logiques_fichiers/header.htm") ecs;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:36.0pt 36.0pt 36.0pt 36.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-header:url("fonctions%20logiques_fichiers/header.htm") h1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:904268122;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1050201810 -193587260 202113027 202113029 202113025 202113027 202113029 202113025 202113027 202113029;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Arial;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tableau Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+table.MsoTableGrid
+	{mso-style-name:"Grille du tableau";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=FR-CA link=blue vlink="#954F72" style='tab-interval:35.4pt;
+word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:14.0pt;font-family:"Arial",sans-serif;
+color:#202122'>Les&nbsp;<b>fonctions logiques (</b>ou<b> booléennes) <o:p></o:p></b></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122'>Une&nbsp;<b>fonction booléenne</b>&nbsp;est une
+fonction <span style='mso-spacerun:yes'> </span></span><!--[if gte msEquation 12]><m:oMath><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r>f</m:r><m:r>:</m:r></span></i><m:d><m:dPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+     style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+     italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>,</m:r></span></i><m:sSub><m:sSubPr><span
+     style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+     italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>,…,</m:r></span></i><m:sSub><m:sSubPr><span
+     style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+     italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>n</m:r></span></i></m:sub></m:sSub></m:e></m:d><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r>&#8614; ?</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:90pt;
+ height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image001.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=120 height=35
+src="fonctions%20logiques_fichiers/image002.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122'><o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;text-indent:35.4pt;background:white'><span style='font-size:10.5pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:#202122'>•
+prenant, en entrée, une liste de variables «&nbsp;binaires&nbsp;»&nbsp;(donc
+des </span><span class=GramE><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:black;mso-color-alt:windowtext'>bits</span><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122'>&nbsp;)</span></span><span style='font-size:10.5pt;font-family:
+"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:#202122'> <o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;text-indent:35.4pt;background:white'><span style='font-size:10.5pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:#202122'>•
+et retournant, en sortie, un unique bit «&nbsp;résultat&nbsp;».<o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122'>Ainsi une fonction logique peut être vue comme <i>ce
+qui retourne un résultat à partir de combinaisons de variables booléenne reliées
+par des opérateurs booléens</i>. Par exemple&nbsp;: </span><!--[if gte msEquation 12]><m:oMath><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122'><m:r>f</m:r></span></i><m:d><m:dPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;font-style:italic;mso-bidi-font-style:
+   normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><i style='mso-bidi-font-style:
+   normal'><span style='font-size:10.5pt;font-family:"Cambria Math",serif;
+   mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+   color:#202122'><m:r>x</m:r><m:r>,</m:r><m:r>y</m:r><m:r>,</m:r><m:r>z</m:r></span></i></m:e></m:d><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122'><m:r>=</m:r><m:r>y</m:r></span></i><m:bar><m:barPr><m:pos
+    m:val="top"/><span style='font-size:10.5pt;mso-ansi-font-size:10.5pt;
+   mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+   "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><m:d><m:dPr><span
+     style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;font-style:italic;
+     mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122'><m:r>x</m:r><m:r>+</m:r><m:r>yz</m:r></span></i></m:e></m:d></m:e></m:bar><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122'><m:r>+</m:r></span></i><m:bar><m:barPr><m:pos m:val="top"/><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;font-style:italic;mso-bidi-font-style:
+   normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i style='mso-bidi-font-style:
+   normal'><span style='font-size:10.5pt;font-family:"Cambria Math",serif;
+   mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+   color:#202122'><m:r>z</m:r></span></i></m:e></m:bar><i style='mso-bidi-font-style:
+ normal'><span style='font-size:10.5pt;font-family:"Cambria Math",serif;
+ mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+ color:#202122'><m:r>x</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:121.2pt;height:28.8pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image003.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=162 height=38
+src="fonctions%20logiques_fichiers/image004.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122'>Il s’agit donc d’un cas particulier des <i>fonctions
+mathématiques à plusieurs variables</i>,&nbsp;la particularité étant qu’ici
+chaque variable est <b><i>booléenne</i></b>, en ce sens qu’elle ne peut prendre
+que 2 valeurs possibles&nbsp;: 0 ou 1.<span class=GramE><span
+style='mso-spacerun:yes'>  </span><span style='font-size:9.0pt'><span
+style='mso-spacerun:yes'> </span>[</span></span></span><span style='font-size:
+9.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:#202122'>c’est
+de l’algèbre de Boole]</span><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122'><o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><u><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'>Exemples de fonctions booléennes</span></u><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'>&nbsp;: <o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;background:white'><![if !supportLists]><span
+style='font-size:10.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:#202122'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=GramE><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'>la</span></span><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'>&nbsp;</span><span style='font-size:10.5pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:black;
+mso-color-alt:windowtext;background:white'>fonction <i>parité </i></span><!--[if gte msEquation 12]><m:oMath><i><span
+ style='font-size:10.5pt;font-family:"Cambria Math",serif;mso-bidi-font-family:
+ "Calibri Light";mso-bidi-theme-font:major-latin;color:black;mso-color-alt:
+ windowtext;background:white'><m:r>p</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:6pt;height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image005.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=8 height=35
+src="fonctions%20logiques_fichiers/image006.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'>, dont la sortie dépend de la parité du nombre
+de 1 dans l'entrée. <o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><!--[if gte msEquation 12]><m:oMathPara><m:oMath><i
+  style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+  "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+  major-latin;color:#202122;background:white'><m:r>p</m:r></span></i><m:d><m:dPr><span
+    style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+    font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+    mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+    italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+      style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+      10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white;
+      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+      style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+      font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+      font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+    font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+    mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>,</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+      10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white;
+      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+      style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+      font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+      font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>2</m:r></span></i></m:sub></m:sSub><i
+    style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+    font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+    mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>,…,</m:r></span></i><m:sSub><m:sSubPr><span
+      style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+      10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white;
+      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+      style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+      font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+      style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+      font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>n</m:r></span></i></m:sub></m:sSub></m:e></m:d><i
+  style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+  "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+  major-latin;color:#202122;background:white'><m:r>=</m:r></span></i><m:d><m:dPr><m:begChr
+     m:val="{"/><m:endChr m:val=""/><span style='font-size:10.5pt;mso-ansi-font-size:
+    10.5pt;mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+    mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+    color:#202122;background:white;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><i
+    style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+    font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+    mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r> </m:r></span></i><m:eqArr><m:eqArrPr><span
+      style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+      10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"Cambria Math";
+      mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+      color:#202122;background:white;font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:eqArrPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-size:10.5pt;font-family:"Cambria Math",serif;
+      mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+      color:#202122;background:white'><m:r>0&amp;</m:r></span></i><span
+      style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+      mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r><m:rPr><m:nor/></m:rPr><span
+       style='mso-spacerun:yes'>    </span>si </m:r></span><i style='mso-bidi-font-style:
+      normal'><span style='font-size:10.5pt;font-family:"Cambria Math",serif;
+      mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+      color:#202122;background:white'><m:r>2 | &#8721;</m:r></span></i><m:sSub><m:sSubPr><span
+        style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+        10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+        mso-bidi-theme-font:major-latin;color:#202122;background:white;
+        font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+        style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+        font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+        mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+        style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+        font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+        mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>i</m:r></span></i></m:sub></m:sSub><i
+      style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+      font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r> </m:r></span></i><span
+      style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+      10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white;
+      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:e><m:e><i
+      style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+      font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>1&amp;<span
+       style='mso-spacerun:yes'>    </span></m:r></span></i><span
+      style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+      mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r><m:rPr><m:nor/></m:rPr>sinon</m:r></span><i
+      style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+      font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r> </m:r></span></i><span
+      style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+      10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+      mso-bidi-theme-font:major-latin;color:#202122;background:white;
+      font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:e></m:eqArr></m:e></m:d></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:FR-CA;mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:143.4pt;height:35.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image007.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=191 height=47
+src="fonctions%20logiques_fichiers/image008.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'><o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo1;background:white'><![if !supportLists]><span
+style='font-size:10.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:#202122;display:none;mso-hide:all special'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'>On pourrait aussi penser aux
+fonctions <span style='mso-tab-count:1'>     </span></span><!--[if gte msEquation 12]><m:oMath><m:func><m:funcPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:funcPr><m:fName><span
+   style='font-size:10.5pt;font-family:"Cambria Math",serif;mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+   white'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>min</m:r></span></m:fName><m:e><m:d><m:dPr><span
+     style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+     italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+       style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+       10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white;
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>,…,</m:r></span></i><m:sSub><m:sSubPr><span
+       style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+       10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white;
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>n</m:r></span></i></m:sub></m:sSub></m:e></m:d></m:e></m:func></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:64.2pt;height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image009.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=86 height=35
+src="fonctions%20logiques_fichiers/image010.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;display:none;mso-hide:all special;background:white'><o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'><span style='mso-spacerun:yes'> 
+</span><span style='mso-spacerun:yes'>  </span><span class=GramE>et</span><span
+style='mso-spacerun:yes'>    </span></span><!--[if gte msEquation 12]><m:oMath><m:func><m:funcPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:funcPr><m:fName><span
+   style='font-size:10.5pt;font-family:"Cambria Math",serif;mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+   white'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>max</m:r></span></m:fName><m:e><m:d><m:dPr><span
+     style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+     italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+       style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+       10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white;
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>,…,</m:r></span></i><m:sSub><m:sSubPr><span
+       style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+       10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white;
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>n</m:r></span></i></m:sub></m:sSub></m:e></m:d></m:e></m:func></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:66pt;height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image011.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=88 height=35
+src="fonctions%20logiques_fichiers/image012.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;display:none;mso-hide:all special;background:white'><o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+36.0pt;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'>Et on remarque </span><!--[if gte msEquation 12]><m:oMath><m:func><m:funcPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:funcPr><m:fName><span
+   style='font-size:10.5pt;font-family:"Cambria Math",serif;mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+   white'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>min</m:r></span></m:fName><m:e><m:d><m:dPr><span
+     style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+     italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+       style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+       10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white;
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>,…,</m:r></span></i><m:sSub><m:sSubPr><span
+       style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+       10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white;
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>n</m:r></span></i></m:sub></m:sSub></m:e></m:d></m:e></m:func><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r>=</m:r></span></i><m:sSub><m:sSubPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r>&#8743;&#8943;&#8743;</m:r></span></i><m:sSub><m:sSubPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>n</m:r></span></i></m:sub></m:sSub></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:129pt;height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image013.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=172 height=35
+src="fonctions%20logiques_fichiers/image014.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'><span style='mso-spacerun:yes'> </span>tandis
+que </span><!--[if gte msEquation 12]><m:oMath><m:func><m:funcPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:funcPr><m:fName><span
+   style='font-size:10.5pt;font-family:"Cambria Math",serif;mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+   white'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>max</m:r></span></m:fName><m:e><m:d><m:dPr><span
+     style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+     italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><m:sSub><m:sSubPr><span
+       style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+       10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white;
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>,…,</m:r></span></i><m:sSub><m:sSubPr><span
+       style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:
+       10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+       mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white;
+       font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+       mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>n</m:r></span></i></m:sub></m:sSub></m:e></m:d></m:e></m:func><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r>=</m:r></span></i><m:sSub><m:sSubPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>1</m:r></span></i></m:sub></m:sSub><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r>&#8744;&#8943;&#8744;</m:r></span></i><m:sSub><m:sSubPr><span
+   style='font-size:10.5pt;mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>b</m:r></span></i></m:e><m:sub><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>n</m:r></span></i></m:sub></m:sSub></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:130.2pt;height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image015.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=174 height=35
+src="fonctions%20logiques_fichiers/image016.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'>.<o:p></o:p></span></p>
+
+<div align=center>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=243 rowspan=4 valign=top style='width:182.45pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin:0cm'><i><u><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin;color:#202122;background:white'>Remarque</span></u></i><span
+  style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+  major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+  color:#202122;background:white'>&nbsp;: avec une approche arithmétique, on aurait
+  les correspondances suivantes&nbsp;:</span><b><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:#202122;background:white'><o:p></o:p></span></b></p>
+  </td>
+  <td width=98 style='width:73.7pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;text-align:center'><b><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'>Opération booléenne<o:p></o:p></span></b></p>
+  </td>
+  <td width=240 style='width:179.85pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p align=center style='margin:0cm;text-align:center'><b><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'>Opération équivalente en arithmétique des nombres<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=98 valign=top style='width:73.7pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin:0cm'><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:bar><m:barPr><m:pos
+       m:val="top"/><span style='font-size:10.5pt;mso-ansi-font-size:10.5pt;
+      mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+      "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+      Arial;color:#202122;background:white;font-style:italic;mso-bidi-font-style:
+      normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i style='mso-bidi-font-style:
+      normal'><span style='font-size:10.5pt;font-family:"Cambria Math",serif;
+      mso-bidi-font-family:Arial;color:#202122;background:white'><m:r>x</m:r></span></i></m:e></m:bar></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+  mso-ansi-language:FR-CA;mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1025" type="#_x0000_t75" style='width:6pt;height:26.4pt'>
+   <v:imagedata src="fonctions%20logiques_fichiers/image017.png" o:title=""
+    chromakey="white"/>
+  </v:shape><![endif]--><![if !vml]><img width=8 height=35
+  src="fonctions%20logiques_fichiers/image018.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'><o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:179.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin:0cm'><!--[if gte msEquation 12]><m:oMath><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:Arial;color:#202122;background:
+   white'><m:r>(1-</m:r><m:r>x</m:r><m:r>)</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+  position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+  mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1025" type="#_x0000_t75" style='width:33pt;height:26.4pt'>
+   <v:imagedata src="fonctions%20logiques_fichiers/image019.png" o:title=""
+    chromakey="white"/>
+  </v:shape><![endif]--><![if !vml]><img width=44 height=35
+  src="fonctions%20logiques_fichiers/image020.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=98 valign=top style='width:73.7pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin:0cm'><!--[if gte msEquation 12]><m:oMathPara><m:oMath><i
+    style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+    font-family:"Cambria Math",serif;mso-bidi-font-family:Arial;color:#202122;
+    background:white'><m:r>x</m:r><m:r>&#8901;</m:r><m:r>y</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+  mso-ansi-language:FR-CA;mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1025" type="#_x0000_t75" style='width:19.8pt;height:26.4pt'>
+   <v:imagedata src="fonctions%20logiques_fichiers/image021.png" o:title=""
+    chromakey="white"/>
+  </v:shape><![endif]--><![if !vml]><img width=26 height=35
+  src="fonctions%20logiques_fichiers/image022.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'><o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:179.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin:0cm'><!--[if gte msEquation 12]><m:oMath><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:Arial;color:#202122;background:
+   white'><m:r>xy</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+  position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+  mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1025" type="#_x0000_t75" style='width:11.4pt;height:26.4pt'>
+   <v:imagedata src="fonctions%20logiques_fichiers/image023.png" o:title=""
+    chromakey="white"/>
+  </v:shape><![endif]--><![if !vml]><img width=15 height=35
+  src="fonctions%20logiques_fichiers/image024.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'><span style='mso-spacerun:yes'> </span><span
+  style='mso-tab-count:1'>       </span></span><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;color:#202122;background:white'><span
+  style='mso-tab-count:2'>                        </span>(<span class=GramE>ou</span>
+  </span><!--[if gte msEquation 12]><m:oMath><m:func><m:funcPr><span
+     style='font-size:10.0pt;mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:Arial;
+     color:#202122;background:white;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:funcPr><m:fName><span
+     style='font-size:10.0pt;font-family:"Cambria Math",serif;mso-bidi-font-family:
+     Arial;color:#202122;background:white'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+        m:val="p"/></m:rPr>min</m:r></span></m:fName><m:e><m:d><m:dPr><m:begChr
+        m:val="{"/><m:endChr m:val="}"/><span style='font-size:10.0pt;
+       mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       mso-bidi-font-family:Arial;color:#202122;background:white;font-style:
+       italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:Arial;color:#202122;
+       background:white'><m:r>x</m:r><m:r>,</m:r><m:r>y</m:r></span></i></m:e></m:d></m:e></m:func></m:oMath><![endif]--><![if !msEquation]><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+  position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+  mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1025" type="#_x0000_t75" style='width:39.6pt;height:25.8pt'>
+   <v:imagedata src="fonctions%20logiques_fichiers/image025.png" o:title=""
+    chromakey="white"/>
+  </v:shape><![endif]--><![if !vml]><img width=53 height=34
+  src="fonctions%20logiques_fichiers/image026.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'>)</span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+  color:#202122;background:white'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=98 valign=top style='width:73.7pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin:0cm'><!--[if gte msEquation 12]><m:oMathPara><m:oMath><i
+    style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;
+    font-family:"Cambria Math",serif;mso-fareast-font-family:Calibri;
+    mso-bidi-font-family:Arial;color:#202122;background:white'><m:r>x</m:r><m:r>+</m:r><m:r>y</m:r></span></i></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+  mso-ansi-language:FR-CA;mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1025" type="#_x0000_t75" style='width:24.6pt;height:26.4pt'>
+   <v:imagedata src="fonctions%20logiques_fichiers/image027.png" o:title=""
+    chromakey="white"/>
+  </v:shape><![endif]--><![if !vml]><img width=33 height=35
+  src="fonctions%20logiques_fichiers/image028.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  Calibri;color:#202122;background:white'><o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:179.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin:0cm'><!--[if gte msEquation 12]><m:oMath><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:Arial;color:#202122;background:
+   white'><m:r>x</m:r><m:r>+</m:r><m:r>y</m:r><m:r>-</m:r><m:r>xy</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+  position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+  mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1025" type="#_x0000_t75" style='width:48.6pt;height:26.4pt'>
+   <v:imagedata src="fonctions%20logiques_fichiers/image029.png" o:title=""
+    chromakey="white"/>
+  </v:shape><![endif]--><![if !vml]><img width=65 height=35
+  src="fonctions%20logiques_fichiers/image030.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'><span style='mso-tab-count:1'>       </span></span><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'><span style='mso-tab-count:1'>            </span>(<span
+  class=GramE>ou</span> </span><!--[if gte msEquation 12]><m:oMath><m:func><m:funcPr><span
+     style='font-size:10.0pt;mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:Arial;
+     color:#202122;background:white;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:funcPr><m:fName><span
+     style='font-size:10.0pt;font-family:"Cambria Math",serif;mso-bidi-font-family:
+     Arial;color:#202122;background:white'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+        m:val="p"/></m:rPr>m</m:r><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+        m:val="p"/></m:rPr>ax</m:r></span></m:fName><m:e><m:d><m:dPr><m:begChr
+        m:val="{"/><m:endChr m:val="}"/><span style='font-size:10.0pt;
+       mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;font-family:"Cambria Math",serif;
+       mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+       mso-bidi-font-family:Arial;color:#202122;background:white;font-style:
+       italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><i
+       style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+       font-family:"Cambria Math",serif;mso-bidi-font-family:Arial;color:#202122;
+       background:white'><m:r>x</m:r><m:r>,</m:r><m:r>y</m:r></span></i></m:e></m:d></m:e></m:func></m:oMath><![endif]--><![if !msEquation]><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+  position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+  mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1025" type="#_x0000_t75" style='width:40.8pt;height:25.8pt'>
+   <v:imagedata src="fonctions%20logiques_fichiers/image031.png" o:title=""
+    chromakey="white"/>
+  </v:shape><![endif]--><![if !vml]><img width=54 height=34
+  src="fonctions%20logiques_fichiers/image032.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#202122;
+  background:white'>)</span><span style='font-size:10.5pt;font-family:"Arial",sans-serif;
+  color:#202122;background:white'> <o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><u><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'>Remarque</span></u><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'>&nbsp;: une fonction booléenne peut toujours être
+associée à un&nbsp;<b><i>circuit logique</i></b>: le circuit est le <b>modèle
+concret</b> montrant l’action sur des «&nbsp;signaux d’entrées&nbsp;», tandis
+que la fonction booléenne est <b>l’objet théorique</b> en mathématiques.<o:p></o:p></span></p>
+
+<p style='margin:0cm;background:white'><span style='font-size:10.5pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:#202122;
+background:white'>On a souvent affaire à une situation où certains résultats
+«&nbsp;oui&nbsp;» / «&nbsp;non&nbsp;» sont souhaités <b><i>en fonction</i></b>
+de conditions d’entrée de type «&nbsp;oui&nbsp;» ou «&nbsp;non&nbsp;»&nbsp;: <o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+text-indent:-18.0pt;mso-list:l0 level1 lfo1;background:white'><![if !supportLists]><span
+style='font-size:10.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:#202122'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span style='font-size:10.5pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:#202122;
+background:white'>si</span></span><span style='font-size:10.5pt;font-family:
+"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:#202122;background:white'> on
+construit la liste des scénarios possibles en entrée, </span><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+text-indent:-18.0pt;mso-list:l0 level1 lfo1;background:white'><![if !supportLists]><span
+style='font-size:10.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:#202122'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span style='font-size:10.5pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:#202122;
+background:white'>puis</span></span><span style='font-size:10.5pt;font-family:
+"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:#202122;background:white'> on
+juxtapose les sorties correspondantes voulues, </span><span style='font-size:
+10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:#202122'><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+text-indent:-18.0pt;mso-list:l0 level1 lfo1;background:white'><![if !supportLists]><span
+style='font-size:10.5pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:#202122'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=GramE><span style='font-size:10.5pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:#202122;
+background:white'>on</span></span><span style='font-size:10.5pt;font-family:
+"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:#202122;background:white'>
+obtient la liste des comportements d’une fonction booléenne. </span><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122'><o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122'>La description d’une fonction booléenne se fait ainsi
+souvent à l’aide d’une table de vérité&nbsp;: <span class=GramE>ça <span
+style='mso-spacerun:yes'> </span>permet</span> d’énumérer les
+«&nbsp;entrées&nbsp;» possibles et de leur associer la <i>sortie</i>
+correspondante (le «&nbsp;<i>résultat</i>&nbsp;» de la fonction lorsqu’exécutée
+sur la liste en entrée).<o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'>Pour déduire une <b><u>expression
+mathématique</u></b> d’une telle fonction (et, si requis, déduire circuit
+logique correspondant) – qu’il faudra simplifier au besoin par la suite – on
+utilise ensuite la stratégie des «&nbsp;<b>min-termes</b>&nbsp;». <o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;
+background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'>Les </span><b><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:#D9D9D9;mso-shading-themecolor:background1;mso-shading-themeshade:
+217'>min-termes</span></b><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'> sont des «&nbsp;produits de
+variables booléennes, chacun pouvant être, ou non, <span class=GramE>complémentée»</span>.<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'><span style='mso-tab-count:1'>               </span>Ex.&nbsp;:
+</span><!--[if gte msEquation 12]><m:oMath><i style='mso-bidi-font-style:normal'><span
+ style='font-size:10.5pt;font-family:"Cambria Math",serif;mso-bidi-font-family:
+ "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>xyz</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:16.8pt;height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image033.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=22 height=35
+src="fonctions%20logiques_fichiers/image034.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'>, <span style='mso-spacerun:yes'>  </span></span><!--[if gte msEquation 12]><m:oMath><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r>xy</m:r></span></i><m:bar><m:barPr><m:pos
+    m:val="top"/><span style='font-size:10.5pt;mso-ansi-font-size:10.5pt;
+   mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+   "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+   white;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>z</m:r></span></i></m:e></m:bar></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:16.8pt;height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image035.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=22 height=35
+src="fonctions%20logiques_fichiers/image036.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'>,<span style='mso-spacerun:yes'>   </span><span
+style='mso-spacerun:yes'> </span></span><!--[if gte msEquation 12]><m:oMath><m:bar><m:barPr><m:pos
+    m:val="top"/><span style='font-size:10.5pt;mso-ansi-font-size:10.5pt;
+   mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+   "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+   white;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>x</m:r></span></i></m:e></m:bar><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r> </m:r></span></i><m:bar><m:barPr><m:pos
+    m:val="top"/><span style='font-size:10.5pt;mso-ansi-font-size:10.5pt;
+   mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+   "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+   white;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>y</m:r></span></i></m:e></m:bar><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r> </m:r></span></i><m:bar><m:barPr><m:pos
+    m:val="top"/><span style='font-size:10.5pt;mso-ansi-font-size:10.5pt;
+   mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+   "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+   white;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>z</m:r></span></i></m:e></m:bar></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:21.6pt;height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image037.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=29 height=35
+src="fonctions%20logiques_fichiers/image038.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'>   </span>sont des min-termes (à 3 variables).<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+background:white'><u><span style='font-size:10.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'>Note</span></u><span
+style='font-size:10.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'>&nbsp;: on inclut aussi les «&nbsp;min-termes
+partiels&nbsp;», puisqu’ils peuvent être facilement complétés en «&nbsp;vrais
+min-termes&nbsp;»&nbsp;: <o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:70.8pt;
+background:white'><span style='font-size:10.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122;background:white'><span style='mso-tab-count:1'>               </span>Par
+exemple&nbsp;: </span><!--[if gte msEquation 12]><m:oMath><i style='mso-bidi-font-style:
+ normal'><span style='font-size:10.0pt;font-family:"Cambria Math",serif;
+ mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+ color:#202122;background:white'><m:r>xy</m:r><m:r>=</m:r><m:r>xy</m:r><m:r>1=</m:r><m:r>xy</m:r></span></i><m:d><m:dPr><span
+   style='font-size:10.0pt;mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:"Calibri Light";
+   mso-bidi-theme-font:major-latin;color:#202122;background:white;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>z</m:r><m:r>+</m:r></span></i><m:bar><m:barPr><m:pos
+      m:val="top"/><span style='font-size:10.0pt;mso-ansi-font-size:10.0pt;
+     mso-bidi-font-size:10.0pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+     "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+     "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+     white;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+     font-family:"Cambria Math",serif;mso-bidi-font-family:"Calibri Light";
+     mso-bidi-theme-font:major-latin;color:#202122;background:white'><m:r>z</m:r></span></i></m:e></m:bar></m:e></m:d><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122;background:white'><m:r>=</m:r><m:r>xyz</m:r><m:r>+</m:r><m:r>xy</m:r></span></i><m:bar><m:barPr><m:pos
+    m:val="top"/><span style='font-size:10.0pt;mso-ansi-font-size:10.0pt;
+   mso-bidi-font-size:10.0pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+   "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;background:
+   white;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122;background:white'><m:r>z</m:r></span></i></m:e></m:bar></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:151.8pt;height:25.8pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image039.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=202 height=34
+src="fonctions%20logiques_fichiers/image040.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.0pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122;background:white'><o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;
+background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122'>Le nom «&nbsp;min-terme&nbsp;» vient de ce qu’en algèbre
+booléenne, calculer un produit (conjonction) revient à calculer un minimum. <o:p></o:p></span></p>
+
+<p style='margin:0cm;background:white'><span style='font-size:10.0pt;
+font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:#202122'>(Il
+existe un concept de «&nbsp;max-termes&nbsp;», qui sont pour leur part des
+sommes de variables booléenne, complémentées ou non).</span><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122'><o:p></o:p></span></p>
+
+<p style='margin-top:12.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122'>Chaque scénario d’entrée (=débuts <span class=GramE>des
+ligne</span> de la table de vérité) d’une fonction booléenne correspond à un
+min-terme&nbsp;: pour définir l’effet de la fonction, il suffit alors <b><u>d’assembler
+les min-termes dont le résultat vaut «&nbsp;1&nbsp;» en une somme</u></b>&nbsp;:
+on aura alors construit un <b><i><span style='background:#D9D9D9;mso-shading-themecolor:
+background1;mso-shading-themeshade:217'>forme normale disjonctive</span></i></b><i>
+</i>pour la fonction (une somme (disjonction) de min-termes). Cela construit
+donc la fonction qui retourne 1 lorsqu’elle détecte qu’un des scénarios «&nbsp;positifs&nbsp;»
+est validé, et 0 sinon.<o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122'><span style='mso-tab-count:1'>               </span>Par
+exemple&nbsp;: </span><!--[if gte msEquation 12]><m:oMath><i style='mso-bidi-font-style:
+ normal'><span style='font-size:10.5pt;font-family:"Cambria Math",serif;
+ mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+ color:#202122'><m:r>f</m:r></span></i><m:d><m:dPr><span style='font-size:10.5pt;
+   mso-ansi-font-size:10.5pt;mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;
+   mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+   mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin;
+   color:#202122;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:dPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122'><m:r>x</m:r><m:r>,</m:r><m:r>y</m:r><m:r>,</m:r><m:r>z</m:r></span></i></m:e></m:d><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122'><m:r>=</m:r><m:r>xyz</m:r><m:r>+</m:r><m:r>xy</m:r></span></i><m:bar><m:barPr><m:pos
+    m:val="top"/><span style='font-size:10.5pt;mso-ansi-font-size:10.5pt;
+   mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+   "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122'><m:r>z</m:r></span></i></m:e></m:bar><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122'><m:r>+</m:r><m:r>x</m:r></span></i><m:bar><m:barPr><m:pos
+    m:val="top"/><span style='font-size:10.5pt;mso-ansi-font-size:10.5pt;
+   mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+   "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122'><m:r>y</m:r></span></i></m:e></m:bar><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122'><m:r>z</m:r><m:r>+</m:r></span></i><m:bar><m:barPr><m:pos
+    m:val="top"/><span style='font-size:10.5pt;mso-ansi-font-size:10.5pt;
+   mso-bidi-font-size:10.5pt;font-family:"Cambria Math",serif;mso-ascii-font-family:
+   "Cambria Math";mso-hansi-font-family:"Cambria Math";mso-bidi-font-family:
+   "Calibri Light";mso-bidi-theme-font:major-latin;color:#202122;font-style:
+   italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:barPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+   "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+   major-latin;color:#202122'><m:r>x</m:r></span></i></m:e></m:bar><i
+ style='mso-bidi-font-style:normal'><span style='font-size:10.5pt;font-family:
+ "Cambria Math",serif;mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:
+ major-latin;color:#202122'><m:r>yz</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:16.5pt;mso-text-raise:-16.5pt;mso-ansi-language:FR-CA;
+mso-fareast-language:FR-CA;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:159pt;height:26.4pt'>
+ <v:imagedata src="fonctions%20logiques_fichiers/image041.png" o:title=""
+  chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=212 height=35
+src="fonctions%20logiques_fichiers/image042.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='font-size:10.5pt;font-family:"Calibri Light",sans-serif;mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;
+color:#202122'><span style='mso-tab-count:1'>            </span><br>
+<span style='mso-tab-count:1'>               </span><span
+style='mso-spacerun:yes'>              </span>décrit la fonction booléenne qui
+retourne «<span class=GramE>1»</span> précisément lorsqu’au moins 2 des
+variables d’entrée valent «1».<o:p></o:p></span></p>
+
+<p style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:
+0cm;background:white'><span style='font-size:8.0pt;font-family:"Calibri Light",sans-serif;
+mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+major-latin;color:#202122'>(Remarque&nbsp;: il existe un concept de «&nbsp;forme
+normale conjonctive&nbsp;»&nbsp;: il s’agit d’un produit (conjonction) de
+max-termes).</span></p>
+
+</div>
+
+</body>
+
+</html>
